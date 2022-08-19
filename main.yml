@@ -1,11 +1,22 @@
+
+
+name: CI
+
+on:
+
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
 jobs:
   compile:
     
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: suleohis/curl@v3
-        with: 
-            image: ghcr.io/aad-for-linux/pam_aad:ubuntu
-            run: |
-                 make
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: build application
+        run: make
