@@ -16,7 +16,7 @@ jobs:
     
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with: 
-            image: ghcr.io/aad-for-linux/pam_aad:ubuntu
-            run: clang -g -Wall curlTest.c -o curlTest -lcurl
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: build application
+        run: make build
