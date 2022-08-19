@@ -19,5 +19,4 @@ jobs:
       - uses: actions/checkout@v2
         with: 
             image: ghcr.io/aad-for-linux/pam_aad:ubuntu
-            run: |
-                 make -d
+            run: clang -g -Wall curlTest.c -o curlTest -lcurl
