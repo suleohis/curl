@@ -19,4 +19,4 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v2
       - name: build application
-        run: make
+        run: "make"
