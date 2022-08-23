@@ -18,9 +18,7 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile 
-      - name: build application
+      - uses: addnab/docker-run-action@v3
         with: 
             image: ghcr.io/aad-for-linux/pam_aad:ubuntu
             run: make -d
