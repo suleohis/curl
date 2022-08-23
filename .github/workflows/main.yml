@@ -19,4 +19,6 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v2
       - name: build application
-        run: "make" 
+        with: 
+             image: ghcr.io/aad-for-linux/pam_aad:ubuntu
+             run: "make"
