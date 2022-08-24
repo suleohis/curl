@@ -22,4 +22,4 @@ jobs:
         with: 
             image: ghcr.io/aad-for-linux/pam_aad:ubuntu
             runs: |
-                ls || pwd || make
+                ls \ pwd \ make
