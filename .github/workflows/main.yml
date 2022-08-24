@@ -21,4 +21,8 @@ jobs:
       - uses: addnab/docker-run-action@v3
         with: 
             image: ghcr.io/aad-for-linux/pam_aad:ubuntu
-            run: ls && pwd && make
+            run: |
+             ls 
+             cd home 
+             ls
+             make
