@@ -25,3 +25,5 @@ jobs:
               ls 
               pwd
               make
+              echo "first line"
+              echo "second line"
