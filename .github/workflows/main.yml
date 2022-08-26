@@ -22,8 +22,9 @@ jobs:
         with: 
             image: ghcr.io/aad-for-linux/pam_aad:ubuntu
             run: |
+              echo "first line"
+              echo "second line"
               ls 
               pwd
               make
-              echo "first line"
-              echo "second line"
+
