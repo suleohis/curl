@@ -25,11 +25,13 @@ jobs:
               
   volume-mount-test:
     runs-on: ubuntu-latest
+    
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
       - uses: addnab/docker-run-action@v3
         with: 
+            options: -v ${{ github.workspace }}:/work -e ABC=123
             image: ghcr.io/aad-for-linux/pam_aad:ubuntu
             run: |
               ls run
