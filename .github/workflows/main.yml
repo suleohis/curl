@@ -20,7 +20,7 @@ jobs:
             run: |
               ls 
               pwd
-              make build
+              make all
               
   volume-mount-test:
     runs-on: ubuntu-latest
@@ -35,4 +35,4 @@ jobs:
             run: |
               ls 
               pwd
-              make build
+              make all
