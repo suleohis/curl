@@ -19,9 +19,9 @@ jobs:
         with: 
             image: ghcr.io/aad-for-linux/pam_aad:ubuntu
             run: |
-              ls run
+              ls 
               pwd
-              make
+              make build
               
   volume-mount-test:
     runs-on: ubuntu-latest
@@ -34,6 +34,6 @@ jobs:
             options: -v ${{ github.workspace }}:/work -e ABC=123
             image: ghcr.io/aad-for-linux/pam_aad:ubuntu
             run: |
-              ls run
+              ls 
               pwd
-              make
+              make build
