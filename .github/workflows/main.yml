@@ -35,4 +35,5 @@ jobs:
             run: |
               cd work
               pwd
-              make 
+              make  
+              ls
