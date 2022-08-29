@@ -18,7 +18,7 @@ jobs:
         with: 
             image: ghcr.io/aad-for-linux/pam_aad:ubuntu
             run: |
-              ls 
+              cd work 
               pwd
               make 
               
