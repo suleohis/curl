@@ -33,6 +33,6 @@ jobs:
             options: -v ${{ github.workspace }}:/work -e ABC=123
             image: ghcr.io/aad-for-linux/pam_aad:ubuntu
             run: |
-              ls 
+              cd work
               pwd
               make 
