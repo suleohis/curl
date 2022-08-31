@@ -8,19 +8,7 @@ on:
    branches: [ main ]
 
 jobs:
-  compile:
-    
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout repo
-        uses: actions/checkout@v2
-      - uses: addnab/docker-run-action@v3
-        with: 
-            image: ghcr.io/aad-for-linux/pam_aad:ubuntu
-            run: |
-              cd work 
-              pwd
-              make 
+  
               
   volume-mount-test:
     runs-on: ubuntu-latest
